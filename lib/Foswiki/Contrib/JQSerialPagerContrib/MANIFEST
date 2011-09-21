@@ -1,0 +1,11 @@
+data/System/JQSerialPagerContrib.txt 0644
+lib/Foswiki/Contrib/JQSerialPagerContrib/Config.spec 0644
+lib/Foswiki/Contrib/JQSerialPagerContrib/Core.pm 0644
+lib/Foswiki/Contrib/JQSerialPagerContrib.pm 0644
+pub/System/JQSerialPagerContrib/jquery.serialpager.css 0644
+pub/System/JQSerialPagerContrib/jquery.serialpager.css.gz 0644
+pub/System/JQSerialPagerContrib/jquery.serialpager.js 0644
+pub/System/JQSerialPagerContrib/jquery.serialpager.js.gz 0644
+pub/System/JQSerialPagerContrib/jquery.serialpager.uncompressed.css 0644
+pub/System/JQSerialPagerContrib/jquery.serialpager.uncompressed.js 0644
+pub/System/JQSerialPagerContrib/Makefile 0644
