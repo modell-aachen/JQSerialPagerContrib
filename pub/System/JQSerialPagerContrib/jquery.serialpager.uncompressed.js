@@ -1,7 +1,7 @@
 /* 
  * serial scroller
  *
- * (c)opyright 2011 Michael Daum http://michaeldaumconsulting.com
+ * (c)opyright 2012 Michael Daum http://michaeldaumconsulting.com
 */
 (function($) {
 
