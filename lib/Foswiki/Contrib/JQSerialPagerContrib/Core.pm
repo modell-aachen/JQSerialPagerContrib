@@ -22,24 +22,24 @@ use Foswiki::Plugins::JQueryPlugin::Plugin ();
 our @ISA = qw( Foswiki::Plugins::JQueryPlugin::Plugin );
 
 sub new {
-  my $class = shift;
+    my $class = shift;
 
-  my $this = bless(
-    $class->SUPER::new(
-      name => 'SerialPager',
-      version => '1.0',
-      author => 'Michael Daum',
-      homepage => 'http://foswiki.org/Extensions/JQSerialPagerContrib',
-      documentation => 'JQSerialPagerContrib',
-      css => ['jquery.serialpager.css'],
-      javascript => ['jquery.serialpager.js'],
-      puburl => '%PUBURLPATH%/%SYSTEMWEB%/JQSerialPagerContrib',
-      dependencies => ['livequery', 'serialscroll'],
-    ),
-    $class
-  );
+    my $this = bless(
+        $class->SUPER::new(
+            name     => 'SerialPager',
+            version  => '1.0',
+            author   => 'Michael Daum',
+            homepage => 'http://foswiki.org/Extensions/JQSerialPagerContrib',
+            documentation => 'JQSerialPagerContrib',
+            css           => ['jquery.serialpager.css'],
+            javascript    => ['jquery.serialpager.js'],
+            puburl        => '%PUBURLPATH%/%SYSTEMWEB%/JQSerialPagerContrib',
+            dependencies  => [ 'livequery', 'serialscroll' ],
+        ),
+        $class
+    );
 
-  return $this;
+    return $this;
 }
 
 1;
