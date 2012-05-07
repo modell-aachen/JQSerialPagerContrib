@@ -121,7 +121,7 @@
   $(function() {
     $(".jqSerialPager:not(.jqInitedSerialPager)").livequery(function() {
       var $this = $(this),
-          opts = $.extend({}, defaults, $this.data(), $this.metadata());
+          opts = $.extend({}, defaults, $this.metadata());
 
       $this.addClass("jqInitedSerialPager").serialPager(opts);
     });
