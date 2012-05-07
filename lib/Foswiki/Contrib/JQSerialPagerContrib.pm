@@ -18,15 +18,14 @@ package Foswiki::Contrib::JQSerialPagerContrib;
 use strict;
 use warnings;
 
-our $VERSION          = '$Rev$';
-our $RELEASE          = '1.00';
+our $VERSION = '$Rev$';
+our $RELEASE = '1.00';
 our $SHORTDESCRIPTION = 'Splits up a list and makes it a pager scroller thingy';
 our $NO_PREFS_IN_TOPIC = 1;
 
 sub init {
-    require Foswiki::Plugins::JQueryPlugin;
-    Foswiki::Plugins::JQueryPlugin::registerPlugin( "SerialPager",
-        "Foswiki::Contrib::JQSerialPagerContrib::Core" );
+  require Foswiki::Plugins::JQueryPlugin;
+  Foswiki::Plugins::JQueryPlugin::registerPlugin("SerialPager", "Foswiki::Contrib::JQSerialPagerContrib::Core");
 }
 
 1;
