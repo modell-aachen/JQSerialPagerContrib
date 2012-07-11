@@ -1,15 +1,97 @@
+%META:TOPICINFO{author="ProjectContributor" date="1342039693" format="1.1" reprev="2" version="2"}%
 ---+!! %TOPIC%
 %SHORTDESCRIPTION%
 
 %TOC%
 
+This is a jQuery plugin for Foswiki that implements a widget to handle long lists.
+It therefore splits the list and adds a pager so that it takes less screen estate
+overall to display all list elements. This kind of list pager comes in handy
+when displaying lots of navigation elements in a sidebar navigation.
+
+<img src="%ATTACHURLPATH%/JQSerialPagerContribSnap1.png" alt="serial pager screenshot" />
+
+This is a screenshot displaying a facet navigation in [[Foswiki:Extensions/SolrPlugin][SolrPlugin]]
+listing all media types available in the current hit set of a search.
+
 ---++ Usage
 
+By adding 
+
+<verbatim class="tml">
+%JQREQUIRE{"serialpager"}%
+</verbatim>
+
+the serial pager widget is available for use on the current page. This will process lists
+wrapped into a DIV element using the =jqSerialPager= class.
+
+<verbatim class="html">
+<div class="jqSeriaPager {parameters}">
+   * list item 
+   * list item 
+   * ...
+</div>
+</verbatim>
+
+This will process all list items inside according to the given parameters.
+
+| *Name* | *Description* | *Default* |
+| pagesize | number of elements per page; if there are less elements in the list overall, no pager will be displayed | 10 |
+| width | width of the widget | auto |
+| easing | animation when flipping pages | easeOutQuart |
+| duration | speed of animation effect flipping pages | 500 |
+| cycle | boolean flag whether to jump to the first page when proceeding after the last one | true |
+| counter | boolean flag whether to display the page indicator at the bottom, e.g. 1/7 means: page one of seven | true |
+| prevText | label of the previous page link | prev |
+| nextText | label of the next page link | next |
+
 ---++ Examples
+
+%JQREQUIRE{"serialpager"}%
+
+<div class="jqSerialPager myPager {pagesize:5, width:200}">
+   * item 1
+   * item 2
+   * item 3
+   * item 4
+   * item 5
+   * item 6
+   * item 7
+   * item 8 
+   * item 9
+   * item 10
+   * item 11
+   * item 12
+   * item 13
+   * item 14
+   * item 15
+   * item 16
+   * item 17
+   * item 18 
+   * item 19
+   * item 20
+</div>
+
+<literal>
+<style>
+.myPager {
+  background-color:#e9e9e9;
+  border-bottom:1px solid #bebebe;
+}
+.myPager li {
+  border-top:1px solid #bebebe;
+  padding:5px 1em 6px;
+}
+</style>
+</literal>
 
 ---++ Installation Instructions
 
 %$INSTALL_INSTRUCTIONS%
+
+%T% Note you need to run =configure= & =save= at least once. This will automatically
+register the serial pager widget to Foswiki.
+
 
 ---++ Info
 <!--
@@ -22,6 +104,9 @@
 |  Release: | %$RELEASE% |
 |  Version: | %$VERSION% |
 |  Change History: | <!-- versions below in reverse order -->&nbsp; |
+|  11 Jul 2012: | initial release |
 |  Dependencies: | %$DEPENDENCIES% |
 |  Home page: | Foswiki:Extensions/%TOPIC% |
 |  Support: | Foswiki:Support/%TOPIC% |
+
+%META:FILEATTACHMENT{name="JQSerialPagerContribSnap1.png" attachment="JQSerialPagerContribSnap1.png" attr="" comment="" date="1342038356" size="13939" user="ProjectContributor" version="1"}%
