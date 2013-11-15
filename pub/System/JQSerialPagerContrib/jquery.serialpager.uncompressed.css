@@ -1,0 +1,41 @@
+.jqSerialPager {
+  overflow:hidden;
+  padding:0em;
+  display:none; /* switched on by javascript */
+}
+.jqSerialPagerScrollPane {
+  width:39000px;
+}
+ul.jqSerialPagerPage {
+  float:left;
+  margin:0px;
+  padding:0px;
+  overflow:hidden;
+  list-style-type:none;
+}
+.jqSerialPagerButtons {
+  padding:5px 0em 6px;
+}
+.jqSerialPagerCounter {
+  text-align:center;
+}
+
+.jqSerialPagerButtons a,
+.jqSerialPagerButtons a:hover {
+  background-repeat:no-repeat;
+  text-decoration:none;
+}
+a.jqSerialPagerPrev,
+a.jqSerialPagerPrev:hover {
+  float:left;
+  background-image:url('../FamFamFamSilkIcons/control_rewind.png');
+  padding-left:25px;
+  background-position:0% 100%;
+}
+a.jqSerialPagerNext,
+a.jqSerialPagerNext:hover {
+  float:right;
+  background-image:url('../FamFamFamSilkIcons/control_fastforward.png');
+  background-position:100% 100%;
+  padding-right:25px;
+}
